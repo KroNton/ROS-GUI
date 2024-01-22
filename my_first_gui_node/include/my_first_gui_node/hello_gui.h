@@ -5,7 +5,7 @@
 #include <ros/ros.h>
 #include <std_msgs/String.h>
 #include <qtimer.h>
-
+#include <sstream>
 
 namespace Ui {
 class HelloGui;
@@ -23,12 +23,17 @@ public:
 public slots:
  void spinOnce();
 
+private slots:
+ void on_pub_Button_clicked();
+
 private:
   Ui::HelloGui *ui;
   QTimer *ros_timer;
   
   ros::NodeHandlePtr nh_;
   ros::Subscriber chatter_sub_;
+  ros::Publisher  srting_pub_;
+  std_msgs::String string_msg;
 
 
 };
