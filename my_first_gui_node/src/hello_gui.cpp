@@ -48,7 +48,7 @@ void HelloGui::chatter_callback(const std_msgs::String::ConstPtr &msg)
 void HelloGui::on_pub_Button_clicked()
 {
    std::stringstream ss;
- ss << "hello KroNton " << ui->count_Box->value();
+ ss << "hello KroNton" << ui->count_Box->value();
  string_msg.data= ss.str();
  srting_pub_.publish(string_msg);
  ui->count_Box->setValue(ui->count_Box->value()+1);
