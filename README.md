@@ -17,13 +17,14 @@ sudo snap install qtcreator-ros --classic
 ### Configure ROS Workspace
 After selecting "ROS Workspace," you need to configure the ROS workspace for your project.
 
-3. Specify the project name.
+1. Specify the project name.
 
-4. Select the ROS distribution that you are using.
+2. Select the ROS distribution that you are using.
 
-5. Choose or create a ROS workspace directory where your project will be stored.
+3. Choose or create a ROS workspace directory where your project will be stored.
 
 
-6. Set the build system (usually 'CatkinMake' for ROS1 or 'colcon' for ROS2).
+4. Set the build system (usually 'CatkinMake' for ROS1 or 'colcon' for ROS2).
 
 ![Configure project](./images/image2.png)
+
